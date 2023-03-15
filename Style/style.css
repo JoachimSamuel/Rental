@@ -7,15 +7,25 @@
     --fourthColor: #2B2B2B;
     --borderRadius: 0.4rem;
     --marginLeft: 3em;
-    --marginRight: 4em;
+    --marginRight: 9em;
 }
-
+body{
+    margin: 0;
+    max-width: 1440px
+}
 h1, h2, h3, P, a{
     font-family: 'Montserrat', sans-serif;
     color: var(--fourthColor);
 }
-body{
+ h2{
+    font-weight: 700;
+    font-size: 3em;
+ }
+
+.homePage{
     background-color: var(--secondColor);
+    margin:0;
+    height: 50em;
 }
 
 
@@ -55,7 +65,7 @@ header a:hover{
     margin-right: var(--marginRight);
 }
 
-/*MAIN*/
+/*HomePage*/
 .contenair{
     display: flex;
     align-items: center;
@@ -68,8 +78,7 @@ header a:hover{
 }
 .contenair__texte h2{
     width: 15ch;
-    font-weight: 700;
-    font-size: 3em;
+  
 }
 .search__bar{
     display: flex;
@@ -93,4 +102,30 @@ header a:hover{
 .contenair img{
     margin-right: var(--marginRight);
     margin-top: 10em;
+}
+
+/*PresentationPage*/
+
+.presentationPage{
+    margin-top: 5em;
+    display: flex;
+    flex-direction: row;
+}
+.presentationPage img{
+   width: 40em;
+   aspect-ratio: 13/12;
+   object-fit: cover;
+}
+.presentationPage__texte{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-left: 5em;
+
+}
+.presentationPage__texte h2{
+    margin-bottom: 0;
+}
+.presentationPage__texte p{
+    width: 56ch;
 }
