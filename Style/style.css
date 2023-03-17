@@ -11,7 +11,6 @@
 }
 body{
     margin: 0;
-    max-width: 1440px
 }
 h1, h2, h3, P, a{
     font-family: 'Montserrat', sans-serif;
@@ -27,9 +26,22 @@ h1, h2, h3, P, a{
     margin:0;
     height: 50em;
 }
-
-
-
+ .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: var(--mainColor);
+    border-radius:  var(--borderRadius);
+    height: 2.5rem;
+}
+a.btn{
+    text-decoration: none;
+}
+.btn:hover{
+    transform: scale(1.1);
+    opacity: 0.7;
+}
 /*HEADER*/
 
 header{
@@ -53,19 +65,10 @@ header a:hover{
     opacity: 0.7;
 }
 
-.header__btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    background-color: var(--mainColor);
-    border-radius:  var(--borderRadius);
-    width: 6.5rem;
-    height: 2rem;
-    margin-right: var(--marginRight);
-}
+
 
 /*HomePage*/
+
 .contenair{
     display: flex;
     align-items: center;
@@ -73,12 +76,15 @@ header a:hover{
     gap: 1em;
     margin-left: var(--marginLeft);
 }
+.homePage__btn{
+    width: 9em;
+    margin-right: var(--marginRight);
+}
 .contenair__texte{
     margin-left: var(--marginLeft);
 }
 .contenair__texte h2{
     width: 15ch;
-  
 }
 .search__bar{
     display: flex;
@@ -102,6 +108,17 @@ header a:hover{
 .contenair img{
     margin-right: var(--marginRight);
     margin-top: 10em;
+    margin-left: 7em;
+    animation: car 250ms;
+}
+@keyframes car{
+    0%{
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 /*PresentationPage*/
@@ -110,22 +127,67 @@ header a:hover{
     margin-top: 5em;
     display: flex;
     flex-direction: row;
+    gap: 3em;
+}
+.presentationPage__containt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .presentationPage img{
-   width: 40em;
+   width: 40%;
    aspect-ratio: 13/12;
    object-fit: cover;
 }
-.presentationPage__texte{
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-left: 5em;
-
-}
 .presentationPage__texte h2{
     margin-bottom: 0;
+    text-align: center;
 }
 .presentationPage__texte p{
     width: 56ch;
+    text-align: end;
+}
+
+.planLocation{
+    margin-top: 4em;
+    display: flex;
+}
+.planLocation__1{
+   display: flex;
+   flex-direction:column;
+   align-items: center;
+   width: 15em;
+}
+
+.planLocation__btn{
+    margin-top: 7em;
+    margin-bottom: 7em;
+    width: 10em;
+}
+.test{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 5em ;
+    margin-bottom: 3em;
+}
+.separationLine{
+    border: 2px solid var(--mainColor);
+    margin-bottom: 0.4em;
+    border-radius: var(--borderRadius) ;
+}
+.little{
+    width: 30%;
+}
+.medium{
+    width: 35%;
+}
+.big{
+    width: 40%;
+}
+
+/*Choose Page*/
+
+.choose__txt{
+    margin-left: 3rem;
 }
