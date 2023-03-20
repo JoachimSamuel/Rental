@@ -190,4 +190,28 @@ header a:hover{
 
 .choose__txt{
     margin-left: 3rem;
+    width: 50%;
+}
+
+.choose__contenair{
+margin-left: 10em;
+}
+.choose__card{
+    margin-bottom: 2em;
+}
+
+.choose__card__title{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+.choose__card__title i{
+    background-color: var(--thirdColor);
+    border-radius: var(--borderRadius);
+    padding: 0.3em;
+}
+.choose__card p{
+    margin-left: 1.5em;
+    margin-top: 0em;
+    width: 15%;
 }
