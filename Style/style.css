@@ -136,7 +136,6 @@ header a:hover{
 }
 .presentationPage img{
    width: 40%;
-   aspect-ratio: 13/12;
    object-fit: cover;
 }
 .presentationPage__texte h2{
@@ -194,8 +193,18 @@ header a:hover{
 }
 
 .choose__contenair{
-margin-left: 10em;
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    margin-left: 11em;
+    margin-right: 11em;
 }
+.choose__contenair img{
+    width: 45%;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+}
+
 .choose__card{
     margin-bottom: 2em;
 }
@@ -213,5 +222,4 @@ margin-left: 10em;
 .choose__card p{
     margin-left: 1.5em;
     margin-top: 0em;
-    width: 15%;
 }
